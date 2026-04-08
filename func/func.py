@@ -139,7 +139,8 @@ def outer():
     def inner(num):
         print("In Inner function" , num)
 
-        return inner()
+    return inner
 
 something = outer()
-something()    
+
+something("salik")

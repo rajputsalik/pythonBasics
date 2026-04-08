@@ -29,8 +29,12 @@
 #     t2.start()
 
 
-a = 5
-a = 6
-print(a)
+def add(a,b):
+    try:
+        return a+b 
+    except Exception as e:
+        print("this error ", e)  
+    finally:
+        print("code excuted")
 
-print(a is a)
+print(add(4,4))        
